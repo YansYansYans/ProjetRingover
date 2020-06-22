@@ -192,11 +192,15 @@
         <a class="btnfree" href="#">Essai Gratuit</a>
     </main>
 
-    <section>
+    <section class="section-visible">
         <h2 class="text"><span>Visioconférences</span> et partage d’écran en toute simplicité</h2>
         <div class="box box1"><img src="img/imgbase.png"></div>
         <div class="box box2"><img src="img/imgfinal.png"></div>
     </section>
+    <div class="section-none">
+        <h2 class="text-none"><span>Visioconférences</span> et partage d’écran en toute simplicité</h2>
+        <div class="img-none"><img src="img/imgfinal.png"></div>
+    </div>
 
     <div class="section-bis">
         <div class="left bis">
@@ -226,7 +230,7 @@
         </div>
     </div>
 
-    <div class="slideshow-container">
+    <div class="slideshow-container slideshow-container-device">
         <div class="mySlides fade">
             <img class="img-diapo" src="img/1.png">
         </div>
@@ -361,6 +365,9 @@
             })
             .from(".text", {
                 scale: 0
+            })
+            .from(".box1", {
+                x : innerWidth * -1
             })
             .from(".box2", {
                 opacity: 0
