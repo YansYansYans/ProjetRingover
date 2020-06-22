@@ -1,8 +1,8 @@
 header {
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
     & .nav-me {
         & .a-me-logo {
             & img {
@@ -31,16 +31,118 @@ header {
     }
 }
 
+main {
+    padding-top: 100px;
+    z-index: 50;
+    text-align: center;
+    & h3 {
+        color: #343a40;
+    }
+    & p {
+        color: #343a40;
+    }
+}
+
 section {
     position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-
+    z-index: 5;
+    text-align: center;
+    & h2 {
+        position: absolute;
+        width: 60%;
+        font-weight: bold;
+        & span {
+            color: #3ddccf;;
+        }
+    }
+    & .box {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 }
-section .box {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.section-bis {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    & .bis {
+        padding: 50px;
+        width: 50%;
+        & i {
+            font-size: 5em;
+            color: #3ddccf;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+
+a {
+    text-decoration-style: none;
+}
+.img2 {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+}
+.btnplay {
+    background-color: #3ddccf;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+    color: white;
+    text-decoration: none;
+}
+.btnplay:hover {
+    background-color: #343a40;
+    color: white;
+    transition: 500ms;
+    text-decoration: none;
+}
+.btnfree {
+    background-color: #3ddc3d;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+    color: white;
+    text-decoration: none;
+}
+.btnfree:hover {
+    background-color: #343a40;
+    color: white;
+    transition: 500ms;
+    text-decoration: none;
+}
+.btn {
+    display: flex;
+    background-color: red;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    & div {
+        margin-bottom: 100px;
+        margin-top: 100px;
+        width: 100%;
+    }
+}
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+    & a {
+        color: white;
+    }
+    & a:hover {
+        color: white;
+    }
+    & img {
+        width: 1em;
+    }
 }
