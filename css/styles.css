@@ -63,6 +63,7 @@ section .box {
   display: flex;
   justify-content: space-between;
   margin: auto;
+  flex-wrap: wrap;
 }
 .section-bis .bis {
   padding: 50px;
@@ -72,6 +73,10 @@ section .box {
   font-size: 5em;
   color: #3ddccf;
   padding-bottom: 50px;
+}
+
+.section-bis-bis {
+  width: 80%;
 }
 
 a {
@@ -133,6 +138,8 @@ a {
 footer {
   background-color: #343a40;
   color: white;
+  margin-top: 200px;
+  padding-top: 100px;
 }
 footer a {
   color: white;
@@ -142,6 +149,13 @@ footer a:hover {
 }
 footer img {
   width: 1em;
+}
+footer .footer-first {
+  margin-bottom: 100px;
+}
+footer .footer-back {
+  width: 70%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
