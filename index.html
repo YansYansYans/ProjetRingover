@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visioconférence Meet by Ringover : un outil professionnel accessible à tout moment, depuis n’importe quel support, sans aucune installation, gratuitement et en toute sécurité.">
+
+    <title>Visioconférence gratuite et sécurisée avec Meet by Ringover</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="img/logo.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+    
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark nav-me">
+            <a class="navbar-brand a-me-logo" href="index.html"><img src="img/logo.png" alt="Logo Ringover"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse nav-div-me" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ul-me">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Produits
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><h3>Téléphonie IP d’entreprise</h3><br><h6>La téléphonie d’entreprise 100% dématérialisée</h6></a>
+                            <a class="dropdown-item" href="#">Appels illimités + 100 destinations</a>
+                            <a class="dropdown-item" href="#">Numéros internationaux 65 pays</a>
+                            <a class="dropdown-item" href="#">Appels depuis votre ordinateur</a>
+                            <a class="dropdown-item" href="#">Applications mobiles</a>
+                            <a class="dropdown-item" href="#">Accueil téléphonique</a>
+                            <a class="dropdown-item" href="#">Serveur vocal interactif</a>
+                            <a class="dropdown-item" href="#">Journal d’appels</a>
+                            <a class="dropdown-item" href="#">Enregistrement des appels</a>
+                            <a class="dropdown-item" href="#">Visioconférence</a>
+                            <a class="dropdown-item" href="#">Conférence téléphonique</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><h3>Logiciel centre d’appel</h3><br><h6>La téléphonie avancée pour vos équipes support et commerciales</h6></a>
+                            <a class="dropdown-item" href="#">Supervision des appels en temps réel</a>
+                            <a class="dropdown-item" href="#">Routage d’appel avancé</a>
+                            <a class="dropdown-item" href="#">Automate d’appel</a>
+                            <a class="dropdown-item" href="#">Performance et KPIs d’appels</a>
+                            <a class="dropdown-item" href="#">Intégrations CRM (Salesforce, Hubspot, Zendesk, Pipedrive…)</a>
+                            <a class="dropdown-item" href="#">Toutes les fonctionnalités</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Utilisations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item second-lien-me" href="#">Standard téléphonique<br><span>Créez le standard téléphonique de votre entreprise en quelques instants</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item second-lien-me" href="#">Prospection téléphonique<br><span>Boostez la productivité de vos commerciaux</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item second-lien-me" href="#">Service client<br><span>Améliorez la qualité de vos appels clients</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item second-lien-me" href="#">Télétravail<br><span>Facilitez le télétravail de vos équipes</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Tarifs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Partenaires
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item second-lien-me" href="#">Espace Partenaire</a>
+                            <a class="dropdown-item second-lien-me" href="#">Devenir Partenaire</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ressources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><h4>Blog</h4></a>
+                            <a class="dropdown-item second-lien-me" href="#">Téléphonie IP d’entreprise</a>
+                            <a class="dropdown-item second-lien-me" href="#">Standard téléphonique</a>
+                            <a class="dropdown-item second-lien-me" href="#">Centre d’appel</a>
+                            <a class="dropdown-item second-lien-me" href="#">Prospection téléphonique</a>
+                            <a class="dropdown-item second-lien-me" href="#">Service client et téléphonie</a>
+                            <a class="dropdown-item second-lien-me" href="#">Télétravail et téléphonie IP</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><h4>Guides</h4></a>
+                            <a class="dropdown-item" href="#">Retrouvez nos guides sur la téléphonie cloud</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><h4>Centre d'aide</h4></a>
+                            <a class="dropdown-item" href="#">Accédez à notre centre d’aide en ligne</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="#">Connexion</a>
+                    </li>
+                    <li class="nav-item dropdown for-img">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-plus-circle"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><h5>Nous joindre</h5></a>
+                            <a class="dropdown-item second-lien-me" href="#"><img src="img/fr.png" alt="Drapeau France"> +33 1 84 800 800</a>
+                            <a class="dropdown-item second-lien-me" href="#"><img src="img/es.png" alt="Drapeau Espagne"> +34 936 06 10 60</a>
+                            <a class="dropdown-item second-lien-me" href="#"><img src="img/all.png" alt="Drapeau Allemagne"> +49 32 212296551</a>
+                            <a class="dropdown-item second-lien-me" href="#"><img src="img/usa.png" alt="Drapeau USA"> +1 438 448 4444</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><h5>Langues</h5></a>
+                            <a class="dropdown-item second-lien-me" href="#"><img src="img/all.png" alt="Drapeau Allemagne">Deutsch</a>
+                            <a class="dropdown-item second-lien-me" href="#"><img src="img/usa.png" alt="Drapeau USA">English</a>
+                            <a class="dropdown-item second-lien-me" href="#"><img src="img/es.png" alt="Drapeau Espagne">Español</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><h5>Essai Gratuit</h5></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="box box1"><img src="img/imgbase.png"></div>
+        <div class="box box2"><img src="img/imgfinal.png"></div>
+    </section>
+    
+
+    <script>
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: "section",
+                start: "center center",
+                end: "bottom top",
+                scrub: true,
+                markers: false,
+                pin: true,
+            }
+        })
+        .from(".box1", {x : innerWidth * -1})
+        .from(".box2", {opacity : 0})
+    </script>
+</body>
+</html>

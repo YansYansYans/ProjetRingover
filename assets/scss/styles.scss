@@ -1,0 +1,46 @@
+header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    & .nav-me {
+        & .a-me-logo {
+            & img {
+                width: 1em;
+            }
+        }
+    }
+    & .nav-div-me {
+        & .second-lien-me {
+            font-weight: bold;
+            & span {
+                font-weight: normal;
+            }
+        }
+    }
+    & .ul-me {
+        margin: auto;
+        & .nav-link-connexion {
+            color: red;
+        }
+        & .for-img {
+            & img {
+                width: 1em;
+            }
+        }
+    }
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+
+}
+section .box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
