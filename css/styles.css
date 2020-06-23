@@ -162,15 +162,23 @@ footer .footer-back {
   margin: auto;
 }
 
-@media all and (max-device-width: 576px) {
+@media all and (max-device-width: 1024px) {
   header {
     position: relative;
+    overflow: hidden;
   }
   header h3 {
     font-size: 1.2em;
   }
+  header h6 {
+    font-size: 1em;
+  }
   header a {
     font-size: 0.8em;
+  }
+  header .test {
+    width: 300px;
+    overflow: hidden;
   }
 
   .div-main {
@@ -179,7 +187,7 @@ footer .footer-back {
     margin-right: auto;
   }
   .div-main img {
-    width: 20em;
+    width: 100%;
   }
 
   .section-visible {
