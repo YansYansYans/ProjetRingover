@@ -23,19 +23,18 @@ header .ul-me .for-img img {
   width: 1em;
 }
 
-.div-main {
+main .div-main {
   padding-top: 100px;
   z-index: 50;
   text-align: center;
 }
-.div-main h3 {
+main .div-main h3 {
   color: #343a40;
 }
-.div-main p {
+main .div-main p {
   color: #343a40;
 }
-
-section {
+main section {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -43,58 +42,57 @@ section {
   z-index: 5;
   text-align: center;
 }
-section h2 {
+main section h2 {
   position: absolute;
   width: 60%;
   font-weight: bold;
 }
-section h2 span {
+main section h2 span {
   color: #3ddccf;
 }
-section .box {
+main section .box {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.section-none {
+main .section-none {
   display: none;
 }
-
-.section-bis {
+main .section-bis {
   width: 70%;
   display: flex;
   justify-content: space-between;
   margin: auto;
   flex-wrap: wrap;
 }
-.section-bis .bis {
+main .section-bis .bis {
   padding: 50px;
   width: 50%;
 }
-.section-bis .bis i {
+main .section-bis .bis i {
   font-size: 5em;
   color: #3ddccf;
   padding-bottom: 50px;
 }
-
-.section-bis-bis {
-  width: 80%;
-}
-
-a {
-  text-decoration-style: none;
-}
-
-.img2 {
+main .img2 {
   display: flex;
   width: 70%;
   margin: auto;
   justify-content: space-around;
 }
-
-.btnplay {
+main .btn {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+main .btn div {
+  margin-bottom: 100px;
+  margin-top: 100px;
+  width: 100%;
+}
+main .btnplay {
   background-color: #3ddccf;
   padding: 20px;
   border-radius: 20px;
@@ -102,15 +100,16 @@ a {
   color: white;
   text-decoration: none;
 }
-
-.btnplay:hover {
+main .btnplay:hover {
   background-color: #343a40;
   color: white;
   transition: 500ms;
   text-decoration: none;
 }
-
-.btnfree {
+main .section-bis-bis {
+  width: 80%;
+}
+main .btnfree {
   background-color: #3ddc3d;
   padding: 20px;
   border-radius: 20px;
@@ -118,25 +117,11 @@ a {
   color: white;
   text-decoration: none;
 }
-
-.btnfree:hover {
+main .btnfree:hover {
   background-color: #343a40;
   color: white;
   transition: 500ms;
   text-decoration: none;
-}
-
-.btn {
-  display: flex;
-  background-color: red;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-}
-.btn div {
-  margin-bottom: 100px;
-  margin-top: 100px;
-  width: 100%;
 }
 
 footer {
@@ -236,6 +221,62 @@ footer .footer-back {
     z-index: 900;
     padding: 0;
   }
+}
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+
+.img-diapo {
+  vertical-align: middle;
+  width: 40em;
+}
+
+.slideshow-container {
+  padding: -200px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  background-color: #343a40;
+  width: 100%;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 100;
+  }
+}
+.inline-photo {
+  opacity: 0;
+  transform: translateY(4em) rotateZ(0deg);
+  transition: transform 5s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
+  will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
 }
 
 /*# sourceMappingURL=styles.css.map */
