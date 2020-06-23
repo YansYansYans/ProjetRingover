@@ -164,7 +164,28 @@ footer .footer-back {
 
 @media all and (max-device-width: 576px) {
   header {
+    position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 10;
+  }
+  header .nav-me .a-me-logo img {
+    width: 1em;
+  }
+  header .nav-div-me .second-lien-me {
+    font-weight: bold;
+  }
+  header .nav-div-me .second-lien-me span {
+    font-weight: normal;
+  }
+  header .ul-me {
+    margin: auto;
+  }
+  header .ul-me .nav-link-connexion {
+    color: red;
+  }
+  header .ul-me .for-img img {
+    width: 1em;
   }
 
   main {
@@ -195,7 +216,7 @@ footer .footer-back {
     color: #3ddccf;
   }
   .section-none img {
-    width: 23em;
+    width: 100%;
     margin-bottom: 50px;
   }
 
@@ -208,7 +229,7 @@ footer .footer-back {
   }
 
   .img2 img {
-    width: 16em;
+    width: 100%;
   }
 
   .slideshow-container-device {
