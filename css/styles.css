@@ -163,8 +163,12 @@ footer .footer-back {
 }
 
 @media all and (max-device-width: 576px) {
+  body {
+    width: 100%;
+  }
+
   header {
-    position: fixed;
+    position: initial;
     top: 0;
     width: 100%;
     z-index: 10;
