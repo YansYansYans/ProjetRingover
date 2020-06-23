@@ -31,7 +31,7 @@ header {
     }
 }
 
-main {
+.div-main {
     padding-top: 100px;
     z-index: 50;
     text-align: center;
@@ -165,43 +165,20 @@ footer {
 
 @media all and (max-device-width: 576px) {
     header {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-        & .nav-me {
-            & .a-me-logo {
-                & img {
-                    width: 1em;
-                }
-            }
+        position: relative;
+        & h3 {
+            font-size: 1.2em;
         }
-        & .nav-div-me {
-            & .second-lien-me {
-                font-weight: bold;
-                & span {
-                    font-weight: normal;
-                }
-            }
-        }
-        & .ul-me {
-            margin: auto;
-            & .nav-link-connexion {
-                color: red;
-            }
-            & .for-img {
-                & img {
-                    width: 1em;
-                }
-            }
+        & a {
+            font-size: 0.8em;
         }
     }
-    main {
+    .div-main {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
         & img {
-            width: 15em;
+            width: 20em;
         }
     }
     .section-visible {
@@ -242,5 +219,9 @@ footer {
         img {
             width: 80%;
         }
+    }
+    main {
+        z-index: 900;
+        padding: 0;
     }
 }

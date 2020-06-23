@@ -23,15 +23,15 @@ header .ul-me .for-img img {
   width: 1em;
 }
 
-main {
+.div-main {
   padding-top: 100px;
   z-index: 50;
   text-align: center;
 }
-main h3 {
+.div-main h3 {
   color: #343a40;
 }
-main p {
+.div-main p {
   color: #343a40;
 }
 
@@ -164,37 +164,22 @@ footer .footer-back {
 
 @media all and (max-device-width: 576px) {
   header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+    position: relative;
   }
-  header .nav-me .a-me-logo img {
-    width: 1em;
+  header h3 {
+    font-size: 1.2em;
   }
-  header .nav-div-me .second-lien-me {
-    font-weight: bold;
-  }
-  header .nav-div-me .second-lien-me span {
-    font-weight: normal;
-  }
-  header .ul-me {
-    margin: auto;
-  }
-  header .ul-me .nav-link-connexion {
-    color: red;
-  }
-  header .ul-me .for-img img {
-    width: 1em;
+  header a {
+    font-size: 0.8em;
   }
 
-  main {
+  .div-main {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
-  main img {
-    width: 15em;
+  .div-main img {
+    width: 20em;
   }
 
   .section-visible {
@@ -237,6 +222,11 @@ footer .footer-back {
   }
   .slideshow-container-device img {
     width: 80%;
+  }
+
+  main {
+    z-index: 900;
+    padding: 0;
   }
 }
 
