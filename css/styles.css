@@ -163,12 +163,8 @@ footer .footer-back {
 }
 
 @media all and (max-device-width: 576px) {
-  body {
-    width: 100%;
-  }
-
   header {
-    position: initial;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
@@ -233,14 +229,14 @@ footer .footer-back {
   }
 
   .img2 img {
-    width: 100%;
+    width: 80%;
   }
 
   .slideshow-container-device {
     width: 100%;
   }
   .slideshow-container-device img {
-    width: 25em;
+    width: 80%;
   }
 }
 
