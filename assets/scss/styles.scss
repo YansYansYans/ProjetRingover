@@ -186,6 +186,9 @@ footer {
             & img {
                 width: 80%;
             }
+            & p {
+                text-align: center;
+            }
         }
         & .section-visible {
             display: none;
@@ -204,7 +207,7 @@ footer {
         }
         & .section-bis {
             flex-direction: column;
-            width: 90%;
+            width: 100%;
             & .bis {
                 width: 100%;
                 & i {
@@ -230,6 +233,9 @@ footer {
                 }
             } 
         }
+    }
+    p {
+        text-align: justify;
     }
 }
 
